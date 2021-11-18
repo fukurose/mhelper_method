@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-require_relative "lib/module_helper/version"
+require_relative "lib/mhelper_method/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "module_helper"
-  spec.version       = ModuleHelper::VERSION
+  spec.name          = "mhelper_method"
+  spec.version       = MhelperMethod::VERSION
   spec.authors       = ["fukurose"]
   spec.email         = ["tfukurose@gmail.com"]
 
   spec.summary       = "You can use the helper method in a module"
-  spec.homepage      = "https://github.com/fukurose/module_helper"
+  spec.homepage      = "https://github.com/fukurose/mhelper_method"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 

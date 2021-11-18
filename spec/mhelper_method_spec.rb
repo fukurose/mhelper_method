@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-RSpec.describe ModuleHelper do
+RSpec.describe MhelperMethod do
   describe "VERSION" do
     it "has a version number" do
-      expect(ModuleHelper::VERSION).to eq "0.1.0"
+      expect(MhelperMethod::VERSION).to eq "0.1.0"
     end
   end
 
-  describe "_module_helper_methods" do
-    # Always initialize _module_helper_methods
-    before { ActionController::Base._module_helper_methods = [] }
+  describe "_mhelper_methods" do
+    # Always initialize _mhelper_methods
+    before { ActionController::Base._mhelper_methods = [] }
 
     context "helper_method in module" do
       let(:controller) do
@@ -26,7 +26,7 @@ RSpec.describe ModuleHelper do
       end
 
       it "module helper methods shoud be set" do
-        expect(controller._module_helper_methods).to eq %i[m1]
+        expect(controller._mhelper_methods).to eq %i[m1]
       end
     end
 
@@ -53,7 +53,7 @@ RSpec.describe ModuleHelper do
       end
 
       it "module helper methods shoud be set" do
-        expect(controller._module_helper_methods).to eq %i[m1 m2]
+        expect(controller._mhelper_methods).to eq %i[m1 m2]
       end
     end
   end

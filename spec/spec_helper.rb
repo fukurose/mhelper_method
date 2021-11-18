@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "action_controller"
-require "module_helper"
+require "mhelper_method"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
