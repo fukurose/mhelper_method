@@ -10,10 +10,10 @@ class Module
 end
 
 ActiveSupport.on_load(:action_controller_base) do
-  class_attribute :__mhelper_methods, default: []
+  class_attribute :_mhelper_methods, default: []
   before_action do
     _mhelper_methods.each do |method|
-      self.class.helper_method method
+      self.class.helper_method(method)
     end
   end
 end
